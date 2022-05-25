@@ -1,0 +1,28 @@
+
+import React, from 'React';
+import React, {useMemo, useState} from "React";
+export default function App(){
+
+    const [number, setNumber]= useState("");
+
+    const ispalindrome = useMemo(() => {
+
+        return number === number.split("").reverse().join("");
+         
+    }, [number]);
+
+    return(
+<>
+        <div>
+        <form>
+          <Input value={number} onchange={(e)=> setNumber(e.target.value)}/>
+        </form>
+          <p>palindrome is:{ispalindrome ? "Yes" : "No"} </p>
+        </div>
+        </>
+    );
+}
+function e(e: any): (this: Window, ev: Event) => any {
+    throw new Error('Function not implemented.');
+}
+
