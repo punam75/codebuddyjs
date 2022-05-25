@@ -19,7 +19,7 @@ const list={
      rank: 'Pro'
 };
 
-function App{
+function App(){
 
     return(
 
